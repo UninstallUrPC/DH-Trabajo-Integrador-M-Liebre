@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > * {
+  flex: 1 1 auto;
+  margin: 5px; 
+}
+
+.header {
+  background-color: #ebd860;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.envio-gratis {
+  width: 100px;
+  height: 100px;
+}
+
+.navigation{
+  display: flex;
+  
+  justify-content: space-around;
+  font-family: s;
+}
+
+.a1 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d5e1f5;
+}
+.articulo1 {
+  background-color: #f7fcff;
+  width: 25vw;
+  height: 18vw;
+  padding: 0px;
+  border: solid 1px black;
+  margin: 20px;
+}
+
+.articulo2 {
+    background-color: #f7fcff;
+    width: 25vw;
+    height: 18vw;
+    padding: 0px;
+    border: solid 1px black;
+    margin: 20px;
+}
+
+.articulo3 {
+    background-color: #f7fcff;
+    width: 25vw;
+    height: 18vw;
+    padding: 0px;
+    border: solid 1px black;
+    margin: 20px;
+}
+.main {
+  background-color: #d5e1f5;
+}
+
+.imagen1 {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  height: 10vw;
+}
+
+.imagen2 {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  height: 10vw;
+}
+
+.imagen3 {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  height: 10vw;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div1 {
+  background-color: #b2c2db;
+  width: 25vw;
+  height: 3vw;
+  border: solid 1px black;
+  margin: 20px;
+  text-align: center;
+}
+
+.uv-of {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.Oferta {
+  color: #1fc24a;
+}
+
+.Nombre {
+  color: black;
+}
+
+.Precio {
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
