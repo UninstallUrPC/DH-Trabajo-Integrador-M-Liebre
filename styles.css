@@ -1,3 +1,127 @@
+/* Abajo esta todo lo de login.html */
+
+
+/* Abajo esta todo lo de signup.html */
+.sidon{
+  background-color: #ebebeb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gerudo{
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.daruk{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.zora{
+  border: solid black 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1vw;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.rito{
+  font-size: 0.7vw;
+  color: blue;
+}
+.mipha{
+  border: solid black 1px;
+  border-radius: 10px;
+  width: 50vw;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 769px) {
+  .gerudo{
+    font-size: 2.6vw;
+    font-weight: bold;
+  }
+
+  .daruk{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .zora{
+    border: solid black 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2vw;
+    padding: 3px;
+  }
+  
+  .rito{
+    font-size: 1.2vw;
+    color: blue;
+  }
+  .mipha{
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 60vw;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .gerudo{
+    font-size: 4vw;
+    font-weight: bold;
+  }
+
+  .daruk{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .zora{
+    border: solid black 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 3.2vw;
+    padding: 3px;
+  }
+  
+  .rito{
+    font-size: 2.6vw;
+    color: blue;
+  }
+  .mipha{
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 90vw;
+    height: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  
+}
+
+
+
+/* Abajo esta todo lo de home.html */
+
+
 .header {
   background-color: #ffe404;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
