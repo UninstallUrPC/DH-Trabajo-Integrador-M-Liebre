@@ -355,22 +355,11 @@ flex-wrap: wrap;
   font-size: 1.2vw;
   }
   
-  .MLcash{
+  .MLcash, .MLenvio, .MLsecure{
   padding: 3px;
   text-align: center;
   max-width: 36vw;
-  }
-  
-  .MLenvio{
-    padding: 3px;
-    text-align: center;
-    max-width: 36vw;
-  }
-  
-  .MLsecure{
-    padding: 3px;
-    text-align: center;
-    max-width: 36vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .footer{
