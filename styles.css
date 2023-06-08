@@ -3,10 +3,21 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  font-size: smaller;
+  
 }
 
+.foto {
+  width: 100%;
+}
+
+.foto img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .imagen img {
   width: 20vw;;  
   height: 20vw;
@@ -17,11 +28,23 @@ display: flex;
 flex-wrap: wrap;
 }
 
+.logo{
+  width:100px; 
+  height:100px;
+  margin-right: 2vw;
+}
+
+.searchbar{
+  margin-right: 2vw;
+}
+
 .navigation{
   display: flex;
   justify-content: space-around;
   width: 45vw;
   flex-wrap: wrap;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 .main {
@@ -29,6 +52,7 @@ flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin-top: 5px;
+  background: #ebebeb;
 }
 
 .section {
@@ -37,13 +61,31 @@ flex-wrap: wrap;
   grid-gap: 10px;
 }
 
+.botin{
+  padding: 3px;
+  color: black;
+}
+
+.Oferta {
+  color: #1fc24a;
+}
+
+.Nombre {
+  color: black;
+}
+
+.Precio {
+  color: black;
+  font-weight: bold;
+}
+
 .caja1,
 .caja2,
 .caja3,
 .articulo1,
 .articulo2,
 .articulo3 {
-  background-color: #f7fcff;
+  background-color: whitesmoke;
   border: solid black 1px;
   display: flex;
   justify-content: center;
@@ -55,18 +97,134 @@ flex-wrap: wrap;
 .caja1,
 .caja2,
 .caja3{
-  width: 32.5vw;
-  height: 4vw;
+  width: 32vw;
+  height: 3vw;
 }
 
 .articulo1,
 .articulo2,
 .articulo3 {
-  width: 32.5vw;
+  width: 32vw;
   height:31vw;
 }
 
-@media only screen and (max-width: 1000px) {
+.footer-bold{
+  font-weight: bold;
+  color: #5c5f63;
+  font-size: 1.5vw;
+  }
+  
+  .footer-text{
+  color: #a8aaad;
+  font-size: 1.2vw;
+  }
+  
+  .MLcash{
+  padding: 3px;
+  text-align: center;
+  max-width: 36vw;
+  }
+  
+  .MLenvio{
+    padding: 3px;
+    text-align: center;
+    max-width: 36vw;
+  }
+  
+  .MLsecure{
+    padding: 3px;
+    text-align: center;
+    max-width: 36vw;
+  }
+  
+  .footer{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  .Copyright{
+    font-size: 1vw;
+  }
+
+@media only screen and (min-width:1120px) {
+  .navbar{
+    display: none;
+  }
+  .hamburger{
+    display: none;
+  }
+}  
+@media only screen and (max-width:1119px){
+  .navigation{
+    display: none;
+  }
+  
+  .hamburger, .close {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .hamburger {
+    background: white;
+  }
+  
+  
+  
+  .hamburger img, .close img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navbar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    list-style: none;
+    background: #ffe404;
+    border: solid black 1px;
+    opacity: 0.8;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
+  
+  .navbar:target {
+    transform: translateY(0);
+  }
+  
+  li a {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+    padding-bottom: 0.5rem;
+  }
+  
+  li a:hover, li a:focus {
+    border-bottom: 1px solid white;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .Copyright{
+    font-size: 2vw;
+  }
+  
   .header {
     flex-direction: column; 
     text-align: center; 
@@ -75,6 +233,14 @@ flex-wrap: wrap;
   .navigation {
     width: 100%;
     margin-top: 20px; 
+  }
+
+  .footer-bold{
+   font-size: 4vw;
+  }
+
+  .footer-text{
+  font-size: 2vw;
   }
 
   .main {
@@ -95,19 +261,40 @@ flex-wrap: wrap;
   .articulo2,
   .articulo3 {
     font-size: 4vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    width: 60vw;
   }
 
 .caja1,
 .caja2,
 .caja3{
-  width: auto;
-  height: auto;
+  max-height: 6vw;
 }
 
-.articulo1,
-  .articulo2,
-  .articulo3 {
-    width: auto;
-    height: auto;
+.footer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MLcash, .MLenvio, .MLsecure{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .header {
+    font-size: 2.5vw; }
+}
+
+@media only screen and (max-width: 361px){
+  .header{
+    font-size: 4vw;
   }
 }
