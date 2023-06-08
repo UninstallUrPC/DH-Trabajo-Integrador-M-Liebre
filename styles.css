@@ -3,9 +3,12 @@
   position: relative;
 }
 
+.abcdefg{
+background-color: #ebebeb;
+}
+
 .donkey {
-  border: solid black 1px;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 10px;
   width: 50vw;
   height: 35vw;
@@ -22,6 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .octopath {
@@ -93,8 +97,8 @@
 
 /* Abajo esta todo lo de login.html */
 .sidon{
-  background-color: #ebebeb;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ebebeb;
 }
 
 .gerudo{
@@ -105,9 +109,11 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  text-align: center;
 }
 
-.button {
+.button,
+button {
   display: inline-block;
   border: none;
   color: black;
@@ -116,12 +122,12 @@
   text-decoration: none;
 }
 
-.button:hover {
+.button:hover,
+button:hover {
   background-color: #005285;
 }
 
-.zora{
-  border: solid black 1px;
+.zora {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 1vw;
@@ -129,6 +135,7 @@
   background-color: #039dfc;
   font-weight: bold;
   padding: 10px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .rito{
@@ -136,8 +143,7 @@
   color: blue;
 }
 .mipha{
-  border: solid black 1px;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 10px;
   width: 50vw;
   height: 35vw;
@@ -283,7 +289,6 @@ flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin-top: 5px;
-  background: #ebebeb;
 }
 
 .section {
@@ -316,7 +321,7 @@ flex-wrap: wrap;
 .articulo1,
 .articulo2,
 .articulo3 {
-  background-color: whitesmoke;
+  background-color: white;
   border: solid black 1px;
   display: flex;
   justify-content: center;
@@ -341,12 +346,12 @@ flex-wrap: wrap;
 
 .footer-bold{
   font-weight: bold;
-  color: #5c5f63;
+  color: #666666;
   font-size: 1.5vw;
   }
   
   .footer-text{
-  color: #a8aaad;
+  color: #929394;
   font-size: 1.2vw;
   }
   

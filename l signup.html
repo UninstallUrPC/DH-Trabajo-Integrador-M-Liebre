@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="abcdefg">
   <header class="header">
     <a href="home.html">
       <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQ61MW50p2OoTB0Jj6nBrOqBH409LxvlP51hk0whXceyXG_IYJ0hGW3vcndCXwMGpj_Y&usqp=CAU"/> 
@@ -53,54 +53,57 @@
     <p> Completa tus datos</p>
       </div>
   
-  <main class="mario">
+   <main class="mario">
+  <form class="kong" action="home.html">
+    <div class="donkey">
 
-    <div class="kong">
-      <div class="donkey">
-
-        <div class="splatoon">
-          <div class="octopath">
-            <div class="pringles">Nombre</div>
-            <input type="text" placeholder="...">
-          </div>
-        </div>
-
-        <div class="splatoon">
-          <div class="octopath">
-            <div class="pringles">Apellido</div>
-            <input type="text" placeholder="...">
-          </div>
-        </div>
-
-        <div class="splatoon">
-          <div class="octopath">
-            <div class="pringles">E-Mail</div>
-            <input type="email" placeholder="...">
-          </div>
-        </div>
-
-        <div class="splatoon">
-          <div class="octopath">
-            <div class="pringles">Clave</div>
-            <input type="password" placeholder="...">
-          </div>
-
+      <div class="splatoon">
+        <div class="octopath">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="..." required>
         </div>
       </div>
+
+      <div class="splatoon">
+        <div class="octopath">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="..." required>
+        </div>
+      </div>
+
+      <div class="splatoon">
+        <div class="octopath">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" placeholder="..." required>
+        </div>
+      </div>
+
+      <div class="splatoon">
+        <div class="octopath">
+          <label for="clave">Clave</label>
+          <input type="password" id="clave" placeholder="..." required>
+        </div>
+      </div>
+
+      <div class="splatoon">
+        <div class="octopath">
+          <input type="checkbox" id="tos" required>
+          <label for="tos">Acepto los Términos y Condiciones</label>
+        </div>
+      </div>
+
+      <div class="splatoon">
+        <button type="submit" class="zora">
+          Continuar
+        </button>
+      </div>
+
     </div>
-  </main>
-  
-<section>
-<div class="tyc">
-<input type="checkbox">
-  </div>
-
-<div class="contin">
-
-  </div>
-
-</section>
+  </form>
+</main>
 
   <footer>
     <p class="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L. </p>
   </footer>
+</body>
+</html>
