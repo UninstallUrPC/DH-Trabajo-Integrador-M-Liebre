@@ -447,6 +447,15 @@ flex-wrap: wrap;
     border-bottom: 1px solid white;
   }
 }
+
+@media only screen and (max-width:1000px){
+  .footer-bold{
+  font-size: 2vw;
+  }
+  .footer-text{
+  font-size: 1.4vw;
+  }
+}
 @media only screen and (max-width: 769px) {
   .Copyright{
     font-size: 2vw;
